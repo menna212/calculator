@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    transition: 0.2s linear;
+    -webkit-transition: 0.2s li;
+    -moz-transition: 0.2s li;
+    -ms-transition: 0.2s li;
+    -o-transition: 0.2s li;
+  }
+  body {
+    background-color: #02101b;
+  }
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0px 0px 5px gray;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #006898;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #009868;
+  }
+  .container {
+    text-align: center;
+    width: 80%;
+    margin: 40px auto;
+  }
+  input {
+    letter-spacing: 5px;
+    padding: 20px 5px;
+    font-size: 40px;
+    width: 70%;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    background-color: transparent;
+  }
+  #result {
+    padding: 5px 5px;
+    border-bottom: none;
+    color: gray;
+    font-size: 18px;
+  }
+  input:focus {
+    outline: none;
+  }
+  .calculator {
+    margin-top: 50px;
+  }
+  table {
+    max-height: 70vh;
+  }
+  .col-3 {
+    font-size: 300%;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+  #power,
+  #modules,
+  #division,
+  #power,
+  #summtion,
+  #multiple,
+  #substract,
+  #eq {
+    color: orange;
+  }
+  #power:active,
+  #modules:active,
+  #division:active,
+  #power:active,
+  #summtion:active,
+  #multiple:active,
+  #substract:active,
+  #eq:active {
+    background-color: rgb(209, 144, 23);
+    color: #fff;
+  }
+  td:active {
+    background-color: #444;
+  }
+  .x:active {
+    background-color: crimson;
+  }
+  #del {
+    color: crimson;
+  }
+  #del:active {
+    background-color: crimson;
+    color: #fff;
+  }
+  #ac {
+    color: rgb(17, 156, 63);
+  }
+  #ac:active {
+    background-color: rgb(17, 156, 63);
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      width: 100%;
+    }
+    input {
+      font-size: 30px;
+    }
+    .col-3 {
+      font-size: 250%;
+    }
+  }
